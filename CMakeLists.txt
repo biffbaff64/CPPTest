@@ -44,7 +44,7 @@ endif()
 set(PROJECT_NAME CPPTest)
 set(PROJECT_SOURCES main.cpp
                     game.h
-                    Graphics/Gfx.h Graphics/BaseRenderer.cpp Graphics/BaseRenderer.h Graphics/OrthoGameCamera2D.cpp Graphics/OrthoGameCamera2D.h Graphics/Zoom.cpp Graphics/Zoom.h Config/AppConfig.cpp Config/AppConfig.h)
+        Graphics/BaseRenderer.cpp Graphics/BaseRenderer.h Graphics/OrthoGameCamera2D.cpp Graphics/OrthoGameCamera2D.h Graphics/Zoom.cpp Graphics/Zoom.h Config/AppConfig.cpp Config/AppConfig.h Graphics/Gfx.cpp Graphics/Gfx.h)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 set(raylib_VERBOSE 1)

@@ -6,13 +6,14 @@
 
 #include "OrthoGameCamera2D.h"
 
-OrthoGameCamera2D::~OrthoGameCamera2D() = default;
-
-OrthoGameCamera2D::OrthoGameCamera2D(std::string _name)
+OrthoGameCamera2D::OrthoGameCamera2D(char* _name)
 {
-    this->name             = std::move(_name);
+    this->name             = _name;
     this->camera           = Camera2D();
     this->zoom             = Zoom();
     this->isInUse          = false;
     this->isLerpingEnabled = false;
 }
+
+OrthoGameCamera2D::~OrthoGameCamera2D() = default;
+

@@ -14,7 +14,7 @@ public:
     BaseRenderer();
     ~BaseRenderer();
 
-    static void render();
+    void render();
 
     OrthoGameCamera2D parallaxCamera = OrthoGameCamera2D("Parallax Cam");
     OrthoGameCamera2D tiledCamera    = OrthoGameCamera2D("Tiled Cam");

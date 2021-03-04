@@ -2,22 +2,25 @@
 #include "raylib-cpp.hpp"
 #include "game.h"
 
+#define _HUD_WIDTH      1280
+#define _HUD_HEIGHT     720
+#define _VIEW_WIDTH     1920
+#define _VIEW_HEIGHT    1040
+
 int main()
 {
     // Initialization
     //--------------------------------------------------------------------------------------
-    BaseRenderer baseRenderer;
+    BaseRenderer baseRenderer = BaseRenderer();
 
-    raylib::Window window(_VIEW_WIDTH, _VIEW_HEIGHT, "CPPTest - basic window");
+    Gfx::setup();
 
     SetTargetFPS(60);
-
-    baseRenderer.createCameras();
 
     //--------------------------------------------------------------------------------------
 
     // Main game loop
-    while (!window.ShouldClose())    // Detect window close button or ESC key
+    while (!Gfx::window.ShouldClose())    // Detect window close button or ESC key
     {
         // Update
         // ----------------------------------------------------------------------------------
@@ -28,6 +31,7 @@ int main()
         // ----------------------------------------------------------------------------------
         // TODO: Rendering here
         // ----------------------------------------------------------------------------------
+        baseRenderer.render();
     }
 
     return 0;

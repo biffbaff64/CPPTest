@@ -334,6 +334,9 @@
 		<Unit filename="D:/Projects/CPP/CPPTest/Graphics/BaseRenderer.h">
 			<Option target="CPPTest"/>
 		</Unit>
+		<Unit filename="D:/Projects/CPP/CPPTest/Graphics/Gfx.cpp">
+			<Option target="CPPTest"/>
+		</Unit>
 		<Unit filename="D:/Projects/CPP/CPPTest/Graphics/Gfx.h">
 			<Option target="CPPTest"/>
 		</Unit>

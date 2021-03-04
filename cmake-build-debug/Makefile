@@ -276,6 +276,33 @@ Graphics\BaseRenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPTest.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CPPTest.dir\Graphics\BaseRenderer.cpp.s
 .PHONY : Graphics\BaseRenderer.cpp.s
 
+Graphics\Gfx.obj: Graphics\Gfx.cpp.obj
+
+.PHONY : Graphics\Gfx.obj
+
+# target to build an object file
+Graphics\Gfx.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPTest.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CPPTest.dir\Graphics\Gfx.cpp.obj
+.PHONY : Graphics\Gfx.cpp.obj
+
+Graphics\Gfx.i: Graphics\Gfx.cpp.i
+
+.PHONY : Graphics\Gfx.i
+
+# target to preprocess a source file
+Graphics\Gfx.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPTest.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CPPTest.dir\Graphics\Gfx.cpp.i
+.PHONY : Graphics\Gfx.cpp.i
+
+Graphics\Gfx.s: Graphics\Gfx.cpp.s
+
+.PHONY : Graphics\Gfx.s
+
+# target to generate assembly for a file
+Graphics\Gfx.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPTest.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\CPPTest.dir\Graphics\Gfx.cpp.s
+.PHONY : Graphics\Gfx.cpp.s
+
 Graphics\OrthoGameCamera2D.obj: Graphics\OrthoGameCamera2D.cpp.obj
 
 .PHONY : Graphics\OrthoGameCamera2D.obj
@@ -380,6 +407,9 @@ help:
 	@echo ... Graphics/BaseRenderer.obj
 	@echo ... Graphics/BaseRenderer.i
 	@echo ... Graphics/BaseRenderer.s
+	@echo ... Graphics/Gfx.obj
+	@echo ... Graphics/Gfx.i
+	@echo ... Graphics/Gfx.s
 	@echo ... Graphics/OrthoGameCamera2D.obj
 	@echo ... Graphics/OrthoGameCamera2D.i
 	@echo ... Graphics/OrthoGameCamera2D.s

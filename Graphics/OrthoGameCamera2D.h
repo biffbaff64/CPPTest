@@ -11,12 +11,13 @@
 class OrthoGameCamera2D
 {
 public:
-    explicit OrthoGameCamera2D(std::string _name);
+    OrthoGameCamera2D(char* _name);
+    OrthoGameCamera2D();
 
     ~OrthoGameCamera2D();
 
-    std::string name;
-    Camera2D camera;
+    char* name;
+    Camera2D camera{};
     Zoom zoom;
     bool isInUse;
     bool isLerpingEnabled;
