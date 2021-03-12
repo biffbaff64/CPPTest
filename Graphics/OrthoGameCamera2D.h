@@ -6,21 +6,22 @@
 #define CPPTEST_ORTHOGAMECAMERA2D_H
 
 #include "raylib-cpp.hpp"
+#include "Gfx.h"
 #include "Zoom.h"
 
 class OrthoGameCamera2D
 {
 public:
-    OrthoGameCamera2D(char* _name);
     OrthoGameCamera2D();
+
+    OrthoGameCamera2D(float sceneWidth, float sceneHeight, Gfx::ViewportType viewType);
 
     ~OrthoGameCamera2D();
 
-    char* name;
-    Camera2D camera{};
-    Zoom zoom;
-    bool isInUse;
-    bool isLerpingEnabled;
+    Camera2D camera{ };
+    Zoom     zoom;
+    bool     isInUse;
+    bool     isLerpingEnabled;
 
 private:
 };

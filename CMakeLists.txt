@@ -43,8 +43,12 @@ endif()
 # This is the main part:
 set(PROJECT_NAME CPPTest)
 set(PROJECT_SOURCES main.cpp
-                    game.h
-        Graphics/BaseRenderer.cpp Graphics/BaseRenderer.h Graphics/OrthoGameCamera2D.cpp Graphics/OrthoGameCamera2D.h Graphics/Zoom.cpp Graphics/Zoom.h Config/AppConfig.cpp Config/AppConfig.h Graphics/Gfx.cpp Graphics/Gfx.h)
+        Graphics/BaseRenderer.cpp
+        Graphics/OrthoGameCamera2D.cpp
+        Graphics/Zoom.cpp
+        Graphics/Gfx.cpp
+        Config/AppConfig.cpp
+        )
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES})
 set(raylib_VERBOSE 1)

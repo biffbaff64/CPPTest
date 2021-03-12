@@ -20,6 +20,15 @@ public:
     #define _VIEW_WIDTH     1920
     #define _VIEW_HEIGHT    1040
 
+    enum ViewportType
+    {
+        Extended,
+        Fill,
+        Fit,
+        Stretch,
+        Screen,
+    };
+
     static raylib::Window window;
 
 private:

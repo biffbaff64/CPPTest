@@ -28,6 +28,10 @@ BUILD_SHARED_LIBS:BOOL=OFF
 //Build the testing tree.
 BUILD_TESTING:BOOL=OFF
 
+//For backwards compatibility, what version of CMake commands and
+// syntax should this version of CMake try to support.
+CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
+
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=Debug
@@ -300,6 +304,9 @@ ENABLE_MSAN:BOOL=OFF
 //Enable UndefinedBehaviorSanitizer (UBSan) for debugging
 ENABLE_UBSAN:BOOL=OFF
 
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=D:/Projects/CPP/CPPTest/cmake-build-debug/_deps
 
@@ -354,6 +361,9 @@ GLFW_VULKAN_STATIC:BOOL=OFF
 //Include everything disabled by default (for CI usage
 INCLUDE_EVERYTHING:BOOL=OFF
 
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=
+
 //Build fat library for both i386 and x86_64 on macOS
 MACOS_FATLIB:BOOL=OFF
 
@@ -362,6 +372,12 @@ OPENGL_VERSION:STRING=OFF
 
 //Platform to build for.
 PLATFORM:STRING=Desktop
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=D:/Projects/CPP/CPPTest/cmake-build-debug
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=D:/Projects/CPP/CPPTest
 
 //Build raylib as a dynamic library
 SHARED:BOOL=OFF
@@ -733,7 +749,7 @@ CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //GLFW pkg-config Libs.private
-GLFW_PKG_LIBS:INTERNAL= -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32
+GLFW_PKG_LIBS:INTERNAL= -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32 -lgdi32
 //Use Wayland for window creation
 GLFW_USE_WAYLAND:INTERNAL=
 //Replace any OFF by default with ${OFF} to have it covered by

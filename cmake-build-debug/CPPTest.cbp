@@ -19,7 +19,7 @@
 			</Target>
 			<Target title="CPPTest">
 				<Option output="D:/Projects/CPP/CPPTest/cmake-build-debug/CPPTest.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/CPPTest/cmake-build-debug"/>
+				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -48,7 +48,7 @@
 			</Target>
 			<Target title="CPPTest/fast">
 				<Option output="D:/Projects/CPP/CPPTest/cmake-build-debug/CPPTest.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/CPPTest/cmake-build-debug"/>
+				<Option working_dir=""/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -513,9 +513,6 @@
 		</Unit>
 		<Unit filename="D:/Projects/CPP/CPPTest/cmake-build-debug/_deps/raylib-src/src/utils.h">
 			<Option target="raylib_static"/>
-		</Unit>
-		<Unit filename="D:/Projects/CPP/CPPTest/game.h">
-			<Option target="CPPTest"/>
 		</Unit>
 		<Unit filename="D:/Projects/CPP/CPPTest/main.cpp">
 			<Option target="CPPTest"/>

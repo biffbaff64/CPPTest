@@ -14,15 +14,16 @@ public:
     BaseRenderer();
     ~BaseRenderer();
 
+    void createCameras();
     void render();
 
-    OrthoGameCamera2D parallaxCamera = OrthoGameCamera2D("Parallax Cam");
-    OrthoGameCamera2D tiledCamera    = OrthoGameCamera2D("Tiled Cam");
-    OrthoGameCamera2D spriteCamera   = OrthoGameCamera2D("Sprite Cam");
-    OrthoGameCamera2D hudCamera      = OrthoGameCamera2D("Hud Cam");
+    OrthoGameCamera2D parallaxCamera;
+    OrthoGameCamera2D tiledCamera;
+    OrthoGameCamera2D spriteCamera;
+    OrthoGameCamera2D hudCamera;
 
 private:
-    static raylib::Color background;
+    raylib::Color background;
 };
 
 
